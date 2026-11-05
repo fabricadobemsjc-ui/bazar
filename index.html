@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar do Bem - Início</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fafdff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container principal */
+        .main-container {
+            text-align: center;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* Estilização do logotipo */
+        .logo {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        /* Menu de navegação / botões */
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Estilização dos links em formato de botão */
+        .nav-button {
+            display: block;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        /* Botão Caixa - Usando o roxo extraído da fonte do logo */
+        .btn-caixa {
+            background-color: #432874; /* Roxo do logo */
+        }
+
+        .btn-caixa:hover {
+            background-color: #321d58;
+            box-shadow: 0 4px 12px rgba(67, 40, 116, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Botão Vendas - Usando o laranja extraído da sacola do logo */
+        .btn-vendas {
+            background-color: #f7941d; /* Laranja do logo */
+        }
+
+        .btn-vendas:hover {
+            background-color: #e08213;
+            box-shadow: 0 4px 12px rgba(247, 148, 29, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <img src="logo.png" alt="Logo Bazar do Bem" class="logo">
+
+        <nav class="nav-menu">
+            <a href="caixa.html" class="nav-button btn-caixa">Acessar Caixa</a>
+            <a href="vendas.html" class="nav-button btn-vendas">Acessar Vendas</a>
+        </nav>
+    </div>
+
+</body>
+</html>
